@@ -348,8 +348,8 @@ function BookingStep({ price, recurring }: { price: number; recurring: boolean }
         }
         p(cal, ar);
       };
-    })(w, "https://app.cal.com/embed/embed.js", "init");
-    w.Cal("init", "booking", { origin: "https://cal.com" });
+    })(w, "https://app.cal.eu/embed/embed.js", "init");
+    w.Cal("init", "booking", { origin: "https://cal.eu" });
     w.Cal.ns.booking("inline", {
       elementOrSelector: calRef.current,
       calLink: CAL_LINK,

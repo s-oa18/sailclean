@@ -8,7 +8,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-5 pt-8 pb-16 sm:pt-12 sm:pb-24">
           <header className="mb-10 flex items-center justify-between">
             <span className="font-display text-lg font-bold text-ink">
-              Bright<span className="text-tide">side</span> Cleaning
+              Sail<span className="text-tide">Clean</span>
             </span>
             <span className="hidden sm:block text-sm text-ink/60">
               Bristol &amp; Weston-super-Mare
@@ -23,7 +23,7 @@ export default function Home() {
                 booked before the kettle boils.
               </h1>
               <p className="mt-5 text-lg text-ink/70 max-w-md">
-                Instant price, real calendar, vetted local cleaners. No
+                Instant price, real calendar, vetted cleaners. No
                 quote-by-callback, no waiting for someone to ring you back on
                 Tuesday.
               </p>
@@ -34,7 +34,10 @@ export default function Home() {
                   "Small deposit locks it in, pay the rest after your clean",
                 ].map((line) => (
                   <li key={line} className="flex gap-3">
-                    <span aria-hidden className="mt-1 h-2 w-2 shrink-0 rounded-full bg-citrus" />
+                    <span
+                      aria-hidden
+                      className="mt-1 h-2 w-2 shrink-0 rounded-full bg-citrus"
+                    />
                     {line}
                   </li>
                 ))}
@@ -48,7 +51,9 @@ export default function Home() {
 
       {/* How it works — kept tight, no filler sections */}
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <h2 className="font-display text-2xl font-semibold text-ink mb-8">How it works</h2>
+        <h2 className="font-display text-2xl font-semibold text-ink mb-8">
+          How it works
+        </h2>
         <div className="grid gap-8 sm:grid-cols-3">
           {[
             {
@@ -65,7 +70,9 @@ export default function Home() {
             },
           ].map((s) => (
             <div key={s.title}>
-              <h3 className="font-display text-lg font-semibold text-tide mb-2">{s.title}</h3>
+              <h3 className="font-display text-lg font-semibold text-tide mb-2">
+                {s.title}
+              </h3>
               <p className="text-ink/70">{s.text}</p>
             </div>
           ))}
@@ -74,8 +81,13 @@ export default function Home() {
 
       <footer className="bg-ink text-white/70">
         <div className="mx-auto max-w-6xl px-5 py-10 flex flex-col sm:flex-row justify-between gap-4 text-sm">
-          <span>© {new Date().getFullYear()} Brightside Cleaning · Bristol &amp; Weston-super-Mare</span>
-          <a href="#top" className="hover:text-white">Get a quote</a>
+          <span>
+            © {new Date().getFullYear()} SailClean · Bristol &amp;
+            Weston-super-Mare
+          </span>
+          <a href="#top" className="hover:text-white">
+            Get a quote
+          </a>
         </div>
       </footer>
     </main>
